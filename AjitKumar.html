@@ -2,122 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>B.Tech Student Resume</title>
+  <title>Dr. Ajit Kumar - Academic CV</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin:0;
-      padding:0;
-      background:#f4f6f9;
-      color:#333;
+      margin:0; padding:0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:#f5f7fa; color:#333;
     }
-    header {
-      background:#2c3e50;
-      color:white;
-      text-align:center;
-      padding:40px 20px;
+    .container {
+      display:flex; min-height:100vh;
     }
-    header h1 { margin:0; font-size:36px; }
-    header p { margin:5px 0; font-size:18px; }
-    .container { max-width:900px; margin:20px auto; padding:20px; }
+    /* Sidebar */
+    .sidebar {
+      width:300px; background:#2c3e50; color:white; padding:30px;
+    }
+    .sidebar h1 { font-size:24px; margin-bottom:10px; }
+    .sidebar p { margin:5px 0; font-size:14px; }
+    .sidebar a { color:#1abc9c; text-decoration:none; }
+    .sidebar a:hover { text-decoration:underline; }
+    /* Main */
+    .main { flex:1; padding:30px; overflow-y:auto; }
     section {
-      background:white;
-      margin-bottom:20px;
-      padding:20px;
-      border-radius:10px;
+      margin-bottom:30px;
+      background:white; padding:20px; border-radius:10px;
       box-shadow:0 2px 5px rgba(0,0,0,0.1);
     }
     h2 {
-      color:#2c3e50;
-      border-bottom:2px solid #1abc9c;
-      padding-bottom:5px;
-      margin-bottom:15px;
+      margin-top:0; border-bottom:2px solid #1abc9c; padding-bottom:5px; color:#2c3e50;
     }
-    ul { list-style:none; padding:0; }
-    ul li { margin:8px 0; }
+    ul { padding-left:20px; }
+    li { margin-bottom:8px; }
     .skills span {
-      display:inline-block;
-      background:#1abc9c;
-      color:white;
-      padding:5px 12px;
-      margin:5px;
-      border-radius:20px;
-      font-size:14px;
+      display:inline-block; background:#1abc9c; color:white;
+      padding:5px 12px; margin:5px; border-radius:15px; font-size:13px;
+    }
+    /* Collapsible */
+    .collapsible {
+      background:#1abc9c; color:white; cursor:pointer;
+      padding:10px; width:100%; border:none; text-align:left;
+      outline:none; font-size:16px; margin-top:10px; border-radius:5px;
+    }
+    .active, .collapsible:hover { background:#16a085; }
+    .content {
+      max-height:0; overflow:hidden;
+      transition:max-height 0.3s ease-out;
     }
     footer {
-      text-align:center;
-      padding:15px;
-      background:#2c3e50;
-      color:white;
+      text-align:center; padding:10px; background:#2c3e50; color:white;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ajit Singh</h1>
-    <p>B.Tech in Computer Science | Aspiring Software Engineer</p>
-    <p>📧 ajit.singh@email.com | 📞 +91 9876543210 | 🌐 linkedin.com/in/ajitsingh</p>
-  </header>
-
   <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1>Dr. Ajit Kumar</h1>
+      <p>Assistant Professor<br>SR University, Telangana, India</p>
+      <p>📞 +91-9958264111</p>
+      <p>📧 <a href="mailto:jtsingh79@gmail.com">jtsingh79@gmail.com</a></p>
+      <p>📧 <a href="mailto:ajitkumar.891208@gmail.com">ajitkumar.891208@gmail.com</a></p>
+      <p>🌐 <a href="https://www.linkedin.com/in/ajit-kumar-214a5854/">LinkedIn</a></p>
+      <p>📖 <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a></p>
+      <p>🧾 <a href="https://orcid.org/0000-0002-2931-3743">ORCID</a></p>
+    </div>
 
-    <section>
-      <h2>About Me</h2>
-      <p>A passionate and hardworking B.Tech student with a strong foundation in computer science, programming, and problem-solving. Interested in software development, web technologies, and machine learning.</p>
-    </section>
+    <!-- Main Content -->
+    <div class="main">
+      <section>
+        <h2>About Me</h2>
+        <p>PhD in Electronics Engineering (Incheon National University, South Korea). Experienced academic and researcher in nanoelectronics, semiconductor devices, and AI integration with advanced materials. Current Assistant Professor at SR University, Telangana, India.</p>
+      </section>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><b>B.Tech in Computer Science</b> – XYZ University (2021–2025) – CGPA: 8.5/10</li>
-        <li><b>12th Standard</b> – ABC School (2021) – 90%</li>
-        <li><b>10th Standard</b> – ABC School (2019) – 92%</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><b>PhD</b> – Electronics Engineering, Incheon National University, South Korea (2018–2023, GPA: 4.05/4.5)</li>
+          <li><b>MTech</b> – Materials Science, IIT Bombay (2011–2013, GPA: 8.68/10)</li>
+          <li><b>BTech</b> – Electrical & Electronics Engineering, MDU Rohtak (2007–2011, 68.5%)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>C / C++</span>
-        <span>Java</span>
-        <span>Python</span>
-        <span>HTML, CSS, JavaScript</span>
-        <span>React.js</span>
-        <span>SQL</span>
-        <span>Data Structures & Algorithms</span>
-      </div>
-    </section>
+      <section>
+        <h2>Experience</h2>
+        <ul>
+          <li>Assistant Professor, SR University, School of CS & AI (2025–Present)</li>
+          <li>Assistant Professor, Woxsen University (2024–2025)</li>
+          <li>Postdoctoral Researcher, Incheon National University & Mpatchia Co. Ltd, South Korea (2023–2024)</li>
+          <li>Senior Process Engineer, I-NanoFab Centre, South Korea (2020–2023)</li>
+          <li>Application Developer, IBM India Pvt. Ltd. (2013–2017)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><b>Food Delivery Web App</b> – Built a dynamic web app using React & Node.js to simulate ordering, cart, and payments.</li>
-        <li><b>AI Chatbot</b> – Developed a chatbot using Python & NLP libraries for answering FAQs.</li>
-        <li><b>Portfolio Website</b> – Personal portfolio website built with HTML, CSS, and JavaScript.</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Research Focus</h2>
+        <p>Expertise in resistive memory (RRAM), flexible electronics, 2D materials (MoS2, MoTe2), optoelectronics, nanofabrication, and neuromorphic devices. Research combines material synthesis, device fabrication, and advanced characterization techniques.</p>
+      </section>
 
-    <section>
-      <h2>Achievements & Certifications</h2>
-      <ul>
-        <li>Certified in Python Programming – Coursera</li>
-        <li>Winner – Coding Hackathon at XYZ University (2023)</li>
-        <li>Certification in Web Development – Udemy</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>MATLAB</span><span>Python</span><span>Arduino</span><span>AutoCAD</span><span>Rhino-3D</span>
+          <span>KeyShot</span><span>Origin</span><span>Photolithography</span><span>RF/DC Sputtering</span>
+          <span>E-beam Evaporation</span><span>ALD</span><span>XRD</span><span>SEM</span><span>Raman Spectroscopy</span>
+        </div>
+      </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p><b>Email:</b> ajit.singh@email.com</p>
-      <p><b>Phone:</b> +91 9876543210</p>
-      <p><b>LinkedIn:</b> linkedin.com/in/ajitsingh</p>
-      <p><b>GitHub:</b> github.com/ajitsingh</p>
-    </section>
+      <section>
+        <h2>Publications</h2>
+        <button class="collapsible">Show Selected Publications</button>
+        <div class="content">
+          <ul>
+            <li>Ajit Kumar et al., “Multibit, Lead-Free Cs2SnI6 Resistive Random Access Memory…”, <i>Advanced Functional Materials</i>, 2023.</li>
+            <li>Ajit Kumar et al., “Role of IGZO thickness for oxygen reservoir control…”, <i>Journal of Alloys and Compounds</i>, 2022.</li>
+            <li>Ajit Kumar et al., “Thickness dependent resistive switching behaviours in Ta2O5…”, <i>Materials Letters</i>, 2022.</li>
+            <li>More publications available on <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a></li>
+          </ul>
+        </div>
+      </section>
 
+      <section>
+        <h2>Awards & Fellowships</h2>
+        <ul>
+          <li>GATE 2011 – Qualified with AIR 886</li>
+          <li>Deep Skill Award – IBM</li>
+          <li>IBM PBC Rating 2+ (2015–16)</li>
+        </ul>
+      </section>
+    </div>
   </div>
 
   <footer>
-    <p>© 2025 Ajit Singh | Resume</p>
+    © 2025 Dr. Ajit Kumar | Academic CV
   </footer>
+
+  <script>
+    const coll = document.getElementsByClassName("collapsible");
+    for (let i=0; i<coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
