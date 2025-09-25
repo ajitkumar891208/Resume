@@ -2,36 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dr. Ajit Kumar - Academic CV</title>
+  <title>Dr. Ajit Kumar – Academic CV</title>
   <style>
     body {
       margin:0; padding:0;
       font-family: "Segoe UI", Arial, sans-serif;
-      background:#f5f7fa; color:#333;
+      background:#f4f6f9; color:#333;
     }
     .container { display:flex; min-height:100vh; }
-
     /* Sidebar */
     .sidebar {
-      width:300px; background:#2c3e50; color:white;
-      display:flex; flex-direction:column;
-      align-items:center; padding:0;
+      width:320px; background:#2c3e50; color:white;
+      display:flex; flex-direction:column; align-items:center;
     }
-    .sidebar img {
-      width:100%; height:auto; border-bottom:4px solid #1abc9c;
-    }
-    .sidebar .info {
-      padding:20px; text-align:center;
-    }
+    .sidebar img { width:100%; height:auto; }
+    .sidebar .info { padding:20px; text-align:center; }
     .sidebar h1 { font-size:22px; margin:10px 0; }
+    .sidebar h2 { font-size:16px; font-weight:normal; margin:5px 0 15px; color:#ccc; }
     .sidebar p { margin:6px 0; font-size:14px; }
     .sidebar a { color:#1abc9c; text-decoration:none; }
     .sidebar a:hover { text-decoration:underline; }
 
-    /* Main content */
+    /* Main */
     .main { flex:1; padding:30px; overflow-y:auto; }
     section {
-      margin-bottom:30px; background:white;
+      margin-bottom:25px; background:white;
       padding:20px; border-radius:10px;
       box-shadow:0 2px 5px rgba(0,0,0,0.1);
     }
@@ -45,20 +40,18 @@
       font-size:13px;
     }
 
-    /* Collapsible section */
+    /* Collapsible */
     .collapsible {
       background:#1abc9c; color:white; cursor:pointer;
       padding:10px; width:100%; border:none; text-align:left;
-      outline:none; font-size:16px; margin-top:10px;
-      border-radius:5px;
+      outline:none; font-size:16px; margin-top:10px; border-radius:5px;
     }
     .active, .collapsible:hover { background:#16a085; }
     .content { max-height:0; overflow:hidden;
                transition:max-height 0.3s ease-out; }
 
     footer {
-      text-align:center; padding:10px;
-      background:#2c3e50; color:white;
+      text-align:center; padding:12px; background:#2c3e50; color:white;
     }
   </style>
 </head>
@@ -69,13 +62,15 @@
       <img src="profile.jpg" alt="Profile Photo">
       <div class="info">
         <h1>Dr. Ajit Kumar</h1>
-        <p>Assistant Professor<br>SR University, Telangana, India</p>
+        <h2>Assistant Professor</h2>
+        <p>School of CS & AI<br>SR University, Telangana, India</p>
         <p>📞 +91-9958264111</p>
         <p>📧 <a href="mailto:jtsingh79@gmail.com">jtsingh79@gmail.com</a></p>
         <p>📧 <a href="mailto:ajitkumar.891208@gmail.com">ajitkumar.891208@gmail.com</a></p>
         <p>🌐 <a href="https://www.linkedin.com/in/ajit-kumar-214a5854/">LinkedIn</a></p>
         <p>📖 <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a></p>
         <p>🧾 <a href="https://orcid.org/0000-0002-2931-3743">ORCID</a></p>
+        <p>💻 <a href="https://github.com/">GitHub</a></p>
       </div>
     </div>
 
@@ -83,7 +78,7 @@
     <div class="main">
       <section>
         <h2>About Me</h2>
-        <p>PhD in Electronics Engineering (Incheon National University, South Korea). Experienced academic and researcher in nanoelectronics, semiconductor devices, and AI integration with advanced materials. Current Assistant Professor at SR University, Telangana, India.</p>
+        <p>PhD in Electronics Engineering (Incheon National University, South Korea). Experienced academic and researcher in nanoelectronics, semiconductor devices, memory technology, and integration of AI with emerging materials. More than 20 international publications in reputed journals and extensive teaching, mentoring, and research experience. Currently working as an Assistant Professor at SR University, Telangana.</p>
       </section>
 
       <section>
@@ -96,39 +91,41 @@
       </section>
 
       <section>
-        <h2>Experience</h2>
+        <h2>Academic & Industry Experience</h2>
         <ul>
-          <li>Assistant Professor, SR University (2025–Present)</li>
-          <li>Assistant Professor, Woxsen University (2024–2025)</li>
-          <li>Postdoctoral Researcher, Incheon National University & Mpatchia Co. Ltd, South Korea (2023–2024)</li>
-          <li>Senior Process Engineer, I-NanoFab Centre, South Korea (2020–2023)</li>
-          <li>Application Developer, IBM India Pvt. Ltd. (2013–2017)</li>
+          <li>Assistant Professor – SR University, School of CS & AI (2025–Present)</li>
+          <li>Assistant Professor – Woxsen University, School of Technology (2024–2025)</li>
+          <li>Postdoctoral Researcher – Incheon National University & Mpatchia Co. Ltd, South Korea (2023–2024)</li>
+          <li>Senior Process Engineer – I-NanoFab Centre, South Korea (2020–2023)</li>
+          <li>Application Developer – IBM India Pvt. Ltd. (2013–2017)</li>
         </ul>
       </section>
 
       <section>
-        <h2>Research Focus</h2>
-        <p>Expertise in resistive memory (RRAM), flexible electronics, 2D materials (MoS₂, MoTe₂), optoelectronics, nanofabrication, and neuromorphic devices. Research combines material synthesis, device fabrication, and advanced characterization techniques.</p>
+        <h2>Research Interests</h2>
+        <p>Resistive Random Access Memory (RRAM), flexible & transparent electronics, neuromorphic computing devices, 2D semiconductors (MoS₂, MoTe₂), optoelectronics, nanofabrication, and AI-enabled materials/device co-design.</p>
       </section>
 
       <section>
         <h2>Skills</h2>
         <div class="skills">
-          <span>MATLAB</span><span>Python</span><span>Arduino</span><span>AutoCAD</span><span>Rhino-3D</span>
-          <span>KeyShot</span><span>Origin</span><span>Photolithography</span><span>RF/DC Sputtering</span>
-          <span>E-beam Evaporation</span><span>ALD</span><span>XRD</span><span>SEM</span><span>Raman Spectroscopy</span>
+          <span>MATLAB</span><span>Python</span><span>Arduino</span>
+          <span>AutoCAD</span><span>Rhino-3D</span><span>KeyShot</span>
+          <span>Origin</span><span>Photolithography</span><span>RF/DC Sputtering</span>
+          <span>E-beam Evaporation</span><span>Atomic Layer Deposition</span>
+          <span>XRD</span><span>SEM</span><span>Raman Spectroscopy</span>
         </div>
       </section>
 
       <section>
         <h2>Publications</h2>
-        <button class="collapsible">Show Selected Publications</button>
+        <button class="collapsible">Show Publications</button>
         <div class="content">
           <ul>
             <li>Ajit Kumar et al., “Multibit, Lead-Free Cs2SnI6 Resistive Random Access Memory…”, <i>Advanced Functional Materials</i>, 2023.</li>
             <li>Ajit Kumar et al., “Role of IGZO thickness for oxygen reservoir control…”, <i>Journal of Alloys and Compounds</i>, 2022.</li>
             <li>Ajit Kumar et al., “Thickness dependent resistive switching behaviours in Ta2O5…”, <i>Materials Letters</i>, 2022.</li>
-            <li>More on <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a></li>
+            <li>Ajit Kumar et al., multiple other papers in <i>IEEE, Elsevier, Wiley</i> journals (20+ total). See <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a>.</li>
           </ul>
         </div>
       </section>
@@ -145,7 +142,7 @@
   </div>
 
   <footer>
-    © 2025 Dr. Ajit Kumar | Academic CV
+    © 2025 Dr. Ajit Kumar | Assistant Professor | Academic CV
   </footer>
 
   <script>
