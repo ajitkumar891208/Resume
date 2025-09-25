@@ -9,46 +9,56 @@
       font-family: "Segoe UI", Arial, sans-serif;
       background:#f5f7fa; color:#333;
     }
-    .container {
-      display:flex; min-height:100vh;
-    }
+    .container { display:flex; min-height:100vh; }
+
     /* Sidebar */
     .sidebar {
-      width:300px; background:#2c3e50; color:white; padding:30px;
+      width:300px; background:#2c3e50; color:white;
+      display:flex; flex-direction:column;
+      align-items:center; padding:0;
     }
-    .sidebar h1 { font-size:24px; margin-bottom:10px; }
-    .sidebar p { margin:5px 0; font-size:14px; }
+    .sidebar img {
+      width:100%; height:auto; border-bottom:4px solid #1abc9c;
+    }
+    .sidebar .info {
+      padding:20px; text-align:center;
+    }
+    .sidebar h1 { font-size:22px; margin:10px 0; }
+    .sidebar p { margin:6px 0; font-size:14px; }
     .sidebar a { color:#1abc9c; text-decoration:none; }
     .sidebar a:hover { text-decoration:underline; }
-    /* Main */
+
+    /* Main content */
     .main { flex:1; padding:30px; overflow-y:auto; }
     section {
-      margin-bottom:30px;
-      background:white; padding:20px; border-radius:10px;
+      margin-bottom:30px; background:white;
+      padding:20px; border-radius:10px;
       box-shadow:0 2px 5px rgba(0,0,0,0.1);
     }
-    h2 {
-      margin-top:0; border-bottom:2px solid #1abc9c; padding-bottom:5px; color:#2c3e50;
-    }
+    h2 { margin-top:0; border-bottom:2px solid #1abc9c;
+         padding-bottom:5px; color:#2c3e50; }
     ul { padding-left:20px; }
     li { margin-bottom:8px; }
     .skills span {
       display:inline-block; background:#1abc9c; color:white;
-      padding:5px 12px; margin:5px; border-radius:15px; font-size:13px;
+      padding:5px 12px; margin:5px; border-radius:15px;
+      font-size:13px;
     }
-    /* Collapsible */
+
+    /* Collapsible section */
     .collapsible {
       background:#1abc9c; color:white; cursor:pointer;
       padding:10px; width:100%; border:none; text-align:left;
-      outline:none; font-size:16px; margin-top:10px; border-radius:5px;
+      outline:none; font-size:16px; margin-top:10px;
+      border-radius:5px;
     }
     .active, .collapsible:hover { background:#16a085; }
-    .content {
-      max-height:0; overflow:hidden;
-      transition:max-height 0.3s ease-out;
-    }
+    .content { max-height:0; overflow:hidden;
+               transition:max-height 0.3s ease-out; }
+
     footer {
-      text-align:center; padding:10px; background:#2c3e50; color:white;
+      text-align:center; padding:10px;
+      background:#2c3e50; color:white;
     }
   </style>
 </head>
@@ -56,14 +66,17 @@
   <div class="container">
     <!-- Sidebar -->
     <div class="sidebar">
-      <h1>Dr. Ajit Kumar</h1>
-      <p>Assistant Professor<br>SR University, Telangana, India</p>
-      <p>📞 +91-9958264111</p>
-      <p>📧 <a href="mailto:jtsingh79@gmail.com">jtsingh79@gmail.com</a></p>
-      <p>📧 <a href="mailto:ajitkumar.891208@gmail.com">ajitkumar.891208@gmail.com</a></p>
-      <p>🌐 <a href="https://www.linkedin.com/in/ajit-kumar-214a5854/">LinkedIn</a></p>
-      <p>📖 <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a></p>
-      <p>🧾 <a href="https://orcid.org/0000-0002-2931-3743">ORCID</a></p>
+      <img src="profile.jpg" alt="Profile Photo">
+      <div class="info">
+        <h1>Dr. Ajit Kumar</h1>
+        <p>Assistant Professor<br>SR University, Telangana, India</p>
+        <p>📞 +91-9958264111</p>
+        <p>📧 <a href="mailto:jtsingh79@gmail.com">jtsingh79@gmail.com</a></p>
+        <p>📧 <a href="mailto:ajitkumar.891208@gmail.com">ajitkumar.891208@gmail.com</a></p>
+        <p>🌐 <a href="https://www.linkedin.com/in/ajit-kumar-214a5854/">LinkedIn</a></p>
+        <p>📖 <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a></p>
+        <p>🧾 <a href="https://orcid.org/0000-0002-2931-3743">ORCID</a></p>
+      </div>
     </div>
 
     <!-- Main Content -->
@@ -85,7 +98,7 @@
       <section>
         <h2>Experience</h2>
         <ul>
-          <li>Assistant Professor, SR University, School of CS & AI (2025–Present)</li>
+          <li>Assistant Professor, SR University (2025–Present)</li>
           <li>Assistant Professor, Woxsen University (2024–2025)</li>
           <li>Postdoctoral Researcher, Incheon National University & Mpatchia Co. Ltd, South Korea (2023–2024)</li>
           <li>Senior Process Engineer, I-NanoFab Centre, South Korea (2020–2023)</li>
@@ -95,7 +108,7 @@
 
       <section>
         <h2>Research Focus</h2>
-        <p>Expertise in resistive memory (RRAM), flexible electronics, 2D materials (MoS2, MoTe2), optoelectronics, nanofabrication, and neuromorphic devices. Research combines material synthesis, device fabrication, and advanced characterization techniques.</p>
+        <p>Expertise in resistive memory (RRAM), flexible electronics, 2D materials (MoS₂, MoTe₂), optoelectronics, nanofabrication, and neuromorphic devices. Research combines material synthesis, device fabrication, and advanced characterization techniques.</p>
       </section>
 
       <section>
@@ -115,7 +128,7 @@
             <li>Ajit Kumar et al., “Multibit, Lead-Free Cs2SnI6 Resistive Random Access Memory…”, <i>Advanced Functional Materials</i>, 2023.</li>
             <li>Ajit Kumar et al., “Role of IGZO thickness for oxygen reservoir control…”, <i>Journal of Alloys and Compounds</i>, 2022.</li>
             <li>Ajit Kumar et al., “Thickness dependent resistive switching behaviours in Ta2O5…”, <i>Materials Letters</i>, 2022.</li>
-            <li>More publications available on <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a></li>
+            <li>More on <a href="https://scholar.google.com/citations?user=WWN_g8sAAAAJ&hl=en">Google Scholar</a></li>
           </ul>
         </div>
       </section>
